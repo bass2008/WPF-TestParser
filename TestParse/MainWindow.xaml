@@ -1,0 +1,24 @@
+﻿<Window x:Class="TestParse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestParse"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="455.757" Width="934.466">
+    <Grid Margin="0,0,0.8,8.6">
+        <Button x:Name="button" Content="Спарсить и добавить в БД" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="147" Height="43" Click="button_Click"/>
+        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="350" Margin="10,58,0,0" VerticalAlignment="Top" Width="220" VerticalScrollBarVisibility="Visible">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="235,58,0,0" VerticalAlignment="Top" Height="350" Width="682" SelectionChanged="dataGrid_SelectionChanged"/>
+        <Button x:Name="button1" Content="Поиск в БД" HorizontalAlignment="Left" Margin="162,10,0,0" VerticalAlignment="Top" Width="125" Height="43" Click="button1_Click"/>
+        <Button x:Name="button2" Content="Показать на сайте" HorizontalAlignment="Left" Height="43" Margin="292,10,0,0" VerticalAlignment="Top" Width="143" Click="button2_Click"/>
+        <Button x:Name="button3" Content="Удалить все" HorizontalAlignment="Left" Margin="440,10,0,0" VerticalAlignment="Top" Width="139" Height="43" Click="button3_Click"/>
+
+    </Grid>
+</Window>
